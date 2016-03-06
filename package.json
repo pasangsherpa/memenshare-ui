@@ -10,13 +10,17 @@
     "type": "git",
     "url": "git+https://pasangsherpa@github.com/pasangsherpa/memenshare-ui.git"
   },
-  "keywords": [],
+  "keywords": ["meme", "share", "social"],
   "author": "Pasang Sherpa <pgyalzen@gmail.com> (https://github.com/pasangsherpa)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pasangsherpa/memenshare-ui/issues"
   },
   "homepage": "https://github.com/pasangsherpa/memenshare-ui#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-runtime": "^6.6.1"
+  },
   "devDependencies": {
     "babel-core": "^6.6.5",
     "babel-eslint": "^5.0.0",
@@ -29,9 +33,5 @@
     "webpack": "^1.12.14",
     "webpack-dev-middleware": "^1.5.1",
     "webpack-hot-middleware": "^2.9.1"
-  },
-  "dependencies": {
-    "babel": "^6.5.2",
-    "babel-runtime": "^6.6.1"
   }
 }
