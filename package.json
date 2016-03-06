@@ -1,0 +1,20 @@
+{
+  "name": "memenshare-ui",
+  "version": "1.0.0",
+  "description": "UI for memenshare application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://pasangsherpa@github.com/pasangsherpa/memenshare-ui.git"
+  },
+  "keywords": [],
+  "author": "Pasang Sherpa <pgyalzen@gmail.com> (https://github.com/pasangsherpa)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pasangsherpa/memenshare-ui/issues"
+  },
+  "homepage": "https://github.com/pasangsherpa/memenshare-ui#readme"
+}
