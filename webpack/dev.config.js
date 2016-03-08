@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * WEBPACK CONFIG
  *
@@ -54,7 +52,7 @@ module.exports = {
   devtool: 'eval-source-map',
 
   entry: [
-    'webpack-dev-server/client?http://localhost:5000',
+    'webpack-dev-server/client?http://localhost:8000',
     'webpack/hot/dev-server',
     './client'
   ],
@@ -62,7 +60,7 @@ module.exports = {
   output: {
     path: ROOT_DIR,
     publicPath: '/static',
-    filename: 'js/app.js'
+    filename: 'js/bundle.js'
   },
 
   resolve: {

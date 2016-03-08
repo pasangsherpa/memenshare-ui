@@ -42,7 +42,6 @@
 const path = require('path');
 const webpack = require('webpack');
 
-const ROOT_DIR = path.join(__dirname, '../');
 const APP_DIR = path.join(__dirname, '../app');
 const PUBLIC_DIR = path.join(__dirname, '../public');
 
@@ -53,7 +52,7 @@ module.exports = {
 
   output: {
     path: PUBLIC_DIR,
-    filename: 'js/app.js'
+    filename: 'js/bundle.js'
   },
 
   resolve: {
