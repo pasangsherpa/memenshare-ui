@@ -4,13 +4,19 @@
   "description": "UI for memenshare application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "build": "webpack --config ./webpack/prod.config",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://pasangsherpa@github.com/pasangsherpa/memenshare-ui.git"
   },
-  "keywords": ["meme", "share", "social"],
+  "keywords": [
+    "meme",
+    "share",
+    "social"
+  ],
   "author": "Pasang Sherpa <pgyalzen@gmail.com> (https://github.com/pasangsherpa)",
   "license": "MIT",
   "bugs": {
@@ -18,20 +24,24 @@
   },
   "homepage": "https://github.com/pasangsherpa/memenshare-ui#readme",
   "dependencies": {
-    "babel": "^6.5.2",
-    "babel-runtime": "^6.6.1"
+    "babel-runtime": "^6.3.19",
+    "react": "^0.14.5",
+    "react-dom": "^0.14.5"
   },
   "devDependencies": {
-    "babel-core": "^6.6.5",
-    "babel-eslint": "^5.0.0",
-    "babel-loader": "^6.2.4",
-    "babel-plugin-react-transform": "^2.0.2",
-    "eslint": "^2.3.0",
-    "eslint-plugin-react": "^4.2.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "react-transform-hmr": "^1.0.4",
+    "babel-core": "^6.3.21",
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-react-transform": "^2.0.0-beta1",
+    "babel-plugin-transform-runtime": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "eslint": "^1.10.1",
+    "eslint-config-airbnb": "^1.0.0",
+    "eslint-plugin-react": "^3.10.0",
+    "react-transform-hmr": "^1.0.1",
     "webpack": "^1.12.14",
-    "webpack-dev-middleware": "^1.5.1",
-    "webpack-hot-middleware": "^2.9.1"
+    "webpack-dev-server": "^1.14.1"
   }
 }
