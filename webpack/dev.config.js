@@ -60,7 +60,7 @@ module.exports = {
 
   output: {
     path: ROOT_DIR,
-    publicPath: '/static/',
+    publicPath: '/',
     filename: 'js/bundle.js'
   },
 
