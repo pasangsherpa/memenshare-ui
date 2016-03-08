@@ -42,7 +42,7 @@
 const path = require('path');
 const webpack = require('webpack');
 
-const env = process.env.NODE_ENV || 'development';
+const ROOT_DIR = path.join(__dirname, '../');
 const APP_DIR = path.join(__dirname, '../app');
 const PUBLIC_DIR = path.join(__dirname, '../public');
 
@@ -53,7 +53,6 @@ module.exports = {
 
   output: {
     path: PUBLIC_DIR,
-    publicPath: '/public',
     filename: 'js/app.js'
   },
 
@@ -74,7 +73,7 @@ module.exports = {
       }
     })
   ],
-  
+
   module: {
     loaders: [{
       test: /\.jsx?$/,
