@@ -43,6 +43,7 @@
 /* eslint-env node */
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const ROOT_DIR = path.join(__dirname, '../');
 const APP_DIR = path.join(__dirname, '../app');
@@ -59,7 +60,7 @@ module.exports = {
 
   output: {
     path: ROOT_DIR,
-    publicPath: '/static',
+    publicPath: '/static/',
     filename: 'js/bundle.js'
   },
 
@@ -68,6 +69,10 @@ module.exports = {
   },
 
   plugins: [
+    new HtmlWebpackPlugin({
+      template: ROOT_DIR + 'templates/index.html',
+      hash: true
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
