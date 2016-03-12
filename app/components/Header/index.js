@@ -1,14 +1,14 @@
-import React, { PropTypes } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-export default class Header extends React.Component {
+export class Header extends Component {
   render() {
     return (
-      <nav styleName="navbar">
+      <header>
         <Link to="/" activeClassName="" title="Memenshare">
         <span styleName="brand">Memenshare</span>
         </Link>
-      </nav>
+      </header>
     );
   }
 }
